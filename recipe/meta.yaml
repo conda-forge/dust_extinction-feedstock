@@ -1,7 +1,7 @@
 {% set name = "dust_extinction" %}
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "68c096e60b133cfaa60e641cd6a1c9b45a0f9b82d2cd4c8560ce68db3182373d" %}
+{% set hash_value = "f0e0fa0515f545f920f96b9f2fe5fabe299f1d8d297744421c256cf17915ae1a" %}
 
 package:
   name: '{{ name|lower }}'
@@ -21,12 +21,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
     - setuptools
     - astropy >=2
   run:
-    - python
+    - python >=3.5
     - numpy >=1.13
     - scipy
     - astropy >=2

@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -30,7 +30,7 @@ requirements:
     - numpy >=1.13
     - scipy
     - astropy >=2
-    - matplotlib
+    - matplotlib-base
 
 test:
   imports:

@@ -1,23 +1,21 @@
 {% set name = "dust_extinction" %}
-{% set version = "0.8" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "f0e0fa0515f545f920f96b9f2fe5fabe299f1d8d297744421c256cf17915ae1a" %}
+{% set version = "0.9" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: 20ca052229fa1e171ad21d3a841ba5c83b0b818259298d0fe146af305a26fbe3
   patches:
     # See https://github.com/astropy/conda-channel-astropy/blob/d8148c76bc784febd6dc09a9322828bb82392cd7/requirements.yml#L22-L26
     - 0001-Prevent-astropy_helpers-trying-to-auto-update.patch
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:

@@ -10,7 +10,7 @@ source:
   sha256: 20ca052229fa1e171ad21d3a841ba5c83b0b818259298d0fe146af305a26fbe3
   patches:
     # See https://github.com/astropy/conda-channel-astropy/blob/d8148c76bc784febd6dc09a9322828bb82392cd7/requirements.yml#L22-L26
-    - 0001-Prevent-astropy_helpers-trying-to-auto-update.patch
+    # - 0001-Prevent-astropy_helpers-trying-to-auto-update.patch
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - python >=3.5
     - pip
     - setuptools
+    - setuptools_scm
     - astropy >=2
   run:
     - python >=3.5

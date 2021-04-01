@@ -5,9 +5,13 @@ Home: https://github.com/karllark/dust_extinction
 
 Package license: BSD 3-clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dust_extinction-feedstock/blob/master/LICENSE.txt)
 
 Summary: Models of interstellar dust extinction curves
+
+Development: https://github.com/karllark/dust_extinction
+
+Documentation: https://dust_extinction.readthedocs.io/
 
 Models of interstellar dust extinction curves using the
 astropy.modeling framework.  dust_extinction is an
@@ -111,9 +115,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers

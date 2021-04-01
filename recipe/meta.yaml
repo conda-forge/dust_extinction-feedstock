@@ -1,5 +1,5 @@
 {% set name = "dust_extinction" %}
-{% set version = "0.9" %}
+{% set version = "1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 20ca052229fa1e171ad21d3a841ba5c83b0b818259298d0fe146af305a26fbe3
+  sha256: 5fbcef2d837a481d6665a4aa937cc2e92318cb51f14a5a7a4c2a9a08dcb4e636
   patches:
     # See https://github.com/astropy/conda-channel-astropy/blob/d8148c76bc784febd6dc09a9322828bb82392cd7/requirements.yml#L22-L26
     # - 0001-Prevent-astropy_helpers-trying-to-auto-update.patch

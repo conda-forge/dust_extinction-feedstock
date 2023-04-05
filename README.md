@@ -1,11 +1,11 @@
-About dust_extinction
-=====================
+About dust_extinction-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dust_extinction-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/karllark/dust_extinction
 
 Package license: BSD 3-clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dust_extinction-feedstock/blob/main/LICENSE.txt)
 
 Summary: Models of interstellar dust extinction curves
 

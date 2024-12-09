@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -23,12 +23,12 @@ requirements:
     - pip
     - setuptools
     - setuptools_scm
-    - astropy >=2
+    - astropy-base >=2
   run:
     - python >=3.5
     - numpy >=1.13
     - scipy
-    - astropy >=2
+    - astropy-base >=2
     - matplotlib-base
 
 test:

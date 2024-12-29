@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 2d2bfc4b330ea7e2c6f7d9b02335b417200d5503e33606b6eb03c949e0330f38
   patches:
     # See https://github.com/astropy/conda-channel-astropy/blob/d8148c76bc784febd6dc09a9322828bb82392cd7/requirements.yml#L22-L26
@@ -14,24 +14,26 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools_scm
     - astropy-base >=2
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - numpy >=1.13
     - scipy
     - astropy-base >=2
     - matplotlib-base
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - dust_extinction
 

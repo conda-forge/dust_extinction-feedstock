@@ -36,7 +36,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-dust_extinction-green.svg)](https://anaconda.org/conda-forge/dust_extinction) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/dust_extinction.svg)](https://anaconda.org/conda-forge/dust_extinction) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/dust_extinction.svg)](https://anaconda.org/conda-forge/dust_extinction) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/dust_extinction.svg)](https://anaconda.org/conda-forge/dust_extinction) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-dust__extinction-green.svg)](https://anaconda.org/conda-forge/dust_extinction) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/dust_extinction.svg)](https://anaconda.org/conda-forge/dust_extinction) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/dust_extinction.svg)](https://anaconda.org/conda-forge/dust_extinction) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/dust_extinction.svg)](https://anaconda.org/conda-forge/dust_extinction) |
 
 Installing dust_extinction
 ==========================
